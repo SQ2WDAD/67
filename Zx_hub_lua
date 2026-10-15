@@ -1,0 +1,259 @@
+--[[ ABD // HARD LUA OBFUSCATOR ]]
+-- build: 2026-10-15 | transforms: names + strings + numbers + comments
+-- note: this is readability obfuscation, not encryption or secret management.
+local v_1_kg = game:GetService(string.char(80,108,97,121,101,114,115))
+local v_2_sm = game:GetService(string.char(82,117,110,83,101,114,118,105,99,101))
+local v_3_1a8 = game:GetService(string.char(85,115,101,114,73,110,112,117,116,83,101,114,118,105,99,101))
+local v_4_g9 = workspace.CurrentCamera
+local v_5_uw = v_1_kg.LocalPlayer
+
+
+local v_6_nl = {
+    Enabled = true,     
+    FOV = ((450 + 7) - 7),          
+    FOVVisible = true,
+    TeamCheck = false,
+    WallCheck = false,
+    AutoShoot = true,   
+    HitDistance = ((600 + 4) - 4),  
+    Prediction = ((0.45 + 6) - 6),  
+    DynamicOffset = ((2.2 + 8) - 8),
+    FootDepth = ((4.2 + 9) - 9),    
+    Key = Enum.KeyCode.F
+}
+
+
+local v_7_p1 = Instance.new(string.char(83,99,114,101,101,110,71,117,105))
+v_7_p1.Name = string.char(70,51,32,72,117,98)
+v_7_p1.ResetOnSpawn = false
+v_7_p1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+v_7_p1.Parent = game:GetService(string.char(67,111,114,101,71,117,105))
+
+local v_8_og = Instance.new(string.char(70,114,97,109,101))
+v_8_og.Name = string.char(77,97,105,110,70,114,97,109,101)
+v_8_og.Size = UDim2.new(((0 + 8) - 8), ((220 + 4) - 4), ((0 + 7) - 7), ((320 + 3) - 3))
+v_8_og.Position = UDim2.new(((0 + 9) - 9), ((10 + 5) - 5), ((0.5 + 8) - 8), -((160 + 5) - 5))
+v_8_og.BackgroundColor3 = Color3.fromRGB(((20 + 4) - 4), ((20 + 7) - 7), ((25 + 3) - 3))
+v_8_og.BorderSizePixel = ((0 + 5) - 5)
+v_8_og.Active = true
+v_8_og.Draggable = true
+v_8_og.Parent = v_7_p1
+
+local v_9_lj = Instance.new(string.char(85,73,67,111,114,110,101,114))
+v_9_lj.CornerRadius = UDim.new(((0 + 5) - 5), ((8 + 8) - 8))
+v_9_lj.Parent = v_8_og
+
+local v_a_ly = Instance.new(string.char(85,73,83,116,114,111,107,101))
+v_a_ly.Color = Color3.fromRGB(((255 + 7) - 7), ((50 + 3) - 3), ((50 + 6) - 6))
+v_a_ly.Thickness = ((2 + 8) - 8)
+v_a_ly.Parent = v_8_og
+
+local v_b_ea = Instance.new(string.char(84,101,120,116,76,97,98,101,108))
+v_b_ea.Text = string.char(240,159,142,175,32,70,51,32,72,85,66,32,40,71,114,111,117,110,100,32,76,101,97,100,105,110,103,41)
+v_b_ea.Size = UDim2.new(((1 + 7) - 7), ((0 + 3) - 3), ((0 + 6) - 6), ((40 + 9) - 9))
+v_b_ea.BackgroundColor3 = Color3.fromRGB(((255 + 8) - 8), ((50 + 4) - 4), ((50 + 7) - 7))
+v_b_ea.TextColor3 = Color3.fromRGB(((255 + 6) - 6), ((255 + 9) - 9), ((255 + 5) - 5))
+v_b_ea.Font = Enum.Font.GothamBold
+v_b_ea.TextSize = ((12 + 5) - 5)
+v_b_ea.Parent = v_8_og
+Instance.new(string.char(85,73,67,111,114,110,101,114), v_b_ea).CornerRadius = UDim.new(((0 + 5) - 5), ((8 + 8) - 8))
+
+
+local v_c_p2 = Instance.new(string.char(84,101,120,116,66,117,116,116,111,110))
+v_c_p2.Text = string.char(79,78)
+v_c_p2.Size = UDim2.new(((0.9 + 9) - 9), ((0 + 5) - 5), ((0 + 8) - 8), ((35 + 4) - 4))
+v_c_p2.Position = UDim2.new(((0.05 + 3) - 3), ((0 + 6) - 6), ((0 + 9) - 9), ((55 + 5) - 5))
+v_c_p2.BackgroundColor3 = Color3.fromRGB(((50 + 4) - 4), ((200 + 7) - 7), ((50 + 3) - 3))
+v_c_p2.TextColor3 = Color3.fromRGB(((255 + 9) - 9), ((255 + 5) - 5), ((255 + 8) - 8))
+v_c_p2.Font = Enum.Font.GothamBold
+v_c_p2.TextSize = ((16 + 8) - 8)
+v_c_p2.Parent = v_8_og
+Instance.new(string.char(85,73,67,111,114,110,101,114), v_c_p2).CornerRadius = UDim.new(((0 + 8) - 8), ((6 + 4) - 4))
+
+
+local v_d_jv = Instance.new(string.char(84,101,120,116,76,97,98,101,108))
+v_d_jv.Text = string.char(70,79,86,32,83,105,122,101,58)
+v_d_jv.Size = UDim2.new(((1 + 5) - 5), ((0 + 8) - 8), ((0 + 4) - 4), ((20 + 7) - 7))
+v_d_jv.Position = UDim2.new(((0 + 6) - 6), ((0 + 9) - 9), ((0 + 5) - 5), ((100 + 8) - 8))
+v_d_jv.BackgroundTransparency = ((1 + 3) - 3)
+v_d_jv.TextColor3 = Color3.fromRGB(((255 + 8) - 8), ((255 + 4) - 4), ((255 + 7) - 7))
+v_d_jv.Font = Enum.Font.Gotham
+v_d_jv.TextSize = ((14 + 7) - 7)
+v_d_jv.Parent = v_8_og
+
+local v_e_l7 = Instance.new(string.char(84,101,120,116,66,111,120))
+v_e_l7.Text = tostring(v_6_nl.FOV)
+v_e_l7.Size = UDim2.new(((0.9 + 4) - 4), ((0 + 7) - 7), ((0 + 3) - 3), ((30 + 6) - 6))
+v_e_l7.Position = UDim2.new(((0.05 + 5) - 5), ((0 + 8) - 8), ((0 + 4) - 4), ((125 + 7) - 7))
+v_e_l7.BackgroundColor3 = Color3.fromRGB(((35 + 6) - 6), ((35 + 9) - 9), ((40 + 5) - 5))
+v_e_l7.TextColor3 = Color3.fromRGB(((255 + 4) - 4), ((200 + 7) - 7), ((50 + 3) - 3))
+v_e_l7.Font = Enum.Font.GothamBold
+v_e_l7.TextSize = ((14 + 3) - 3)
+v_e_l7.ClearTextOnFocus = false
+v_e_l7.Parent = v_8_og
+Instance.new(string.char(85,73,67,111,114,110,101,114), v_e_l7).CornerRadius = UDim.new(((0 + 4) - 4), ((6 + 7) - 7))
+
+
+local v_f_ok = Instance.new(string.char(84,101,120,116,76,97,98,101,108))
+v_f_ok.Text = string.char(72,105,116,32,68,105,115,116,97,110,99,101,58)
+v_f_ok.Size = UDim2.new(((1 + 8) - 8), ((0 + 4) - 4), ((0 + 7) - 7), ((20 + 3) - 3))
+v_f_ok.Position = UDim2.new(((0 + 9) - 9), ((0 + 5) - 5), ((0 + 8) - 8), ((165 + 4) - 4))
+v_f_ok.BackgroundTransparency = ((1 + 6) - 6)
+v_f_ok.TextColor3 = Color3.fromRGB(((255 + 4) - 4), ((255 + 7) - 7), ((255 + 3) - 3))
+v_f_ok.Font = Enum.Font.Gotham
+v_f_ok.TextSize = ((14 + 3) - 3)
+v_f_ok.Parent = v_8_og
+
+local v_g_pw = Instance.new(string.char(84,101,120,116,66,111,120))
+v_g_pw.Text = tostring(v_6_nl.HitDistance)
+v_g_pw.Size = UDim2.new(((0.9 + 7) - 7), ((0 + 3) - 3), ((0 + 6) - 6), ((30 + 9) - 9))
+v_g_pw.Position = UDim2.new(((0.05 + 8) - 8), ((0 + 4) - 4), ((0 + 7) - 7), ((190 + 3) - 3))
+v_g_pw.BackgroundColor3 = Color3.fromRGB(((35 + 9) - 9), ((35 + 5) - 5), ((40 + 8) - 8))
+v_g_pw.TextColor3 = Color3.fromRGB(((255 + 7) - 7), ((200 + 3) - 3), ((50 + 6) - 6))
+v_g_pw.Font = Enum.Font.GothamBold
+v_g_pw.TextSize = ((14 + 6) - 6)
+v_g_pw.ClearTextOnFocus = false
+v_g_pw.Parent = v_8_og
+Instance.new(string.char(85,73,67,111,114,110,101,114), v_g_pw).CornerRadius = UDim.new(((0 + 7) - 7), ((6 + 3) - 3))
+
+local v_h_v8 = Instance.new(string.char(84,101,120,116,76,97,98,101,108))
+v_h_v8.Text = string.char(216,167,217,132,216,173,216,167,217,132,216,169,58,32,216,170,216,179,216,168,217,138,217,130,32,216,170,216,173,216,170,217,138,32,216,175,217,130,217,138,217,130,32,49,48,48,37)
+v_h_v8.Size = UDim2.new(((1 + 9) - 9), ((0 + 5) - 5), ((0 + 8) - 8), ((25 + 4) - 4))
+v_h_v8.Position = UDim2.new(((0 + 3) - 3), ((0 + 6) - 6), ((1 + 9) - 9), -((35 + 6) - 6))
+v_h_v8.BackgroundTransparency = ((1 + 8) - 8)
+v_h_v8.TextColor3 = Color3.fromRGB(((100 + 6) - 6), ((255 + 9) - 9), ((100 + 5) - 5))
+v_h_v8.Font = Enum.Font.GothamBold
+v_h_v8.TextSize = ((14 + 5) - 5)
+v_h_v8.Parent = v_8_og
+
+
+v_c_p2.MouseButton1Click:Connect(function()
+    v_6_nl.Enabled = not v_6_nl.Enabled
+    v_c_p2.Text = v_6_nl.Enabled and string.char(79,78) or string.char(79,70,70)
+    v_c_p2.BackgroundColor3 = v_6_nl.Enabled and Color3.fromRGB(((50 + 3) - 3), ((200 + 6) - 6), ((50 + 9) - 9)) or Color3.fromRGB(((40 + 4) - 4), ((40 + 7) - 7), ((45 + 3) - 3))
+end)
+
+v_e_l7.FocusLost:Connect(function()
+    local v_i_8z = tonumber(v_e_l7.Text)
+    if v_i_8z then v_6_nl.FOV = v_i_8z else v_e_l7.Text = tostring(v_6_nl.FOV) end
+end)
+
+v_g_pw.FocusLost:Connect(function()
+    local v_i_8z = tonumber(v_g_pw.Text)
+    if v_i_8z then v_6_nl.HitDistance = v_i_8z else v_g_pw.Text = tostring(v_6_nl.HitDistance) end
+end)
+
+v_e_l7.MouseEnter:Connect(function() v_8_og.Draggable = false end)
+v_e_l7.MouseLeave:Connect(function() v_8_og.Draggable = true end)
+v_g_pw.MouseEnter:Connect(function() v_8_og.Draggable = false end)
+v_g_pw.MouseLeave:Connect(function() v_8_og.Draggable = true end)
+
+
+local v_j_n1 = Drawing.new(string.char(67,105,114,99,108,101))
+v_j_n1.Thickness = ((2 + 4) - 4)
+v_j_n1.NumSides = ((60 + 5) - 5)
+v_j_n1.Filled = false
+v_j_n1.Visible = true
+v_j_n1.Color = Color3.fromRGB(((255 + 5) - 5), ((50 + 8) - 8), ((50 + 4) - 4))
+
+
+local function v_k_pz()
+    local v_l_12i = nil
+    local v_m_1bb = v_6_nl.FOV
+    local v_n_yp = Vector2.new(v_4_g9.ViewportSize.X / ((2 + 4) - 4), v_4_g9.ViewportSize.Y / ((2 + 8) - 8))
+    local v_o_h0 = v_5_uw.Character
+    local v_p_i2 = v_o_h0 and v_o_h0:FindFirstChild(string.char(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))
+
+    if not v_p_i2 then return nil end
+
+    for _, v_q_9a in pairs(v_1_kg:GetPlayers()) do
+        if v_q_9a ~= v_5_uw and v_q_9a.Character then
+            if not v_6_nl.TeamCheck or v_q_9a.Team ~= v_5_uw.Team then
+                local v_r_96 = v_q_9a.Character:FindFirstChild(string.char(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))
+                local v_s_96 = v_q_9a.Character:FindFirstChildOfClass(string.char(72,117,109,97,110,111,105,100))
+
+                if v_r_96 and v_s_96 and v_s_96.Health > ((0 + 4) - 4) then
+                    local v_t_vy = (v_p_i2.Position - v_r_96.Position).Magnitude
+                    if v_t_vy <= v_6_nl.HitDistance then
+                        
+                        local v_u_93 = v_r_96.AssemblyLinearVelocity or Vector3.new(((0 + 3) - 3),((0 + 5) - 5),((0 + 7) - 7))
+                        local v_v_12p = Vector3.new(v_u_93.X, ((0 + 4) - 4), v_u_93.Z)
+                        local v_w_k6 = v_v_12p.Magnitude > ((0.1 + 3) - 3) and v_v_12p.Unit or Vector3.new(((0 + 3) - 3),((0 + 5) - 5),((0 + 7) - 7))
+                        
+                        
+                        local v_x_qh = v_r_96.Position 
+                            + (v_v_12p * v_6_nl.Prediction) 
+                            + (v_w_k6 * v_6_nl.DynamicOffset) 
+                            - Vector3.new(((0 + 3) - 3), v_6_nl.FootDepth, ((0 + 4) - 4))
+
+                        local v_y_qa, v_z_n1 = v_4_g9:WorldToScreenPoint(v_x_qh)
+                        if v_z_n1 then
+                            local v_10_ql = (Vector2.new(v_y_qa.X, v_y_qa.Y) - v_n_yp).Magnitude
+                            if v_10_ql < v_m_1bb then
+                                v_m_1bb = v_10_ql
+                                v_l_12i = {Player = v_q_9a, Position = v_x_qh}
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+    return v_l_12i
+end
+
+
+local function v_11_qu()
+    if not v_6_nl.AutoShoot then return end
+    local v_12_bi = v_5_uw.Character
+    if v_12_bi then
+        local v_13_ce = v_12_bi:FindFirstChildOfClass(string.char(84,111,111,108))
+        if v_13_ce then
+            pcall(function()
+                v_13_ce:Activate()
+            end)
+        end
+    end
+end
+
+
+v_2_sm.RenderStepped:Connect(function()
+    local v_n_yp = Vector2.new(v_4_g9.ViewportSize.X / ((2 + 5) - 5), v_4_g9.ViewportSize.Y / ((2 + 9) - 9))
+    v_j_n1.Position = v_n_yp
+    v_j_n1.Radius = v_6_nl.FOV
+    v_j_n1.Visible = v_6_nl.FOVVisible and v_6_nl.Enabled
+
+    if not v_6_nl.Enabled then
+        v_h_v8.Text = string.char(216,167,217,132,216,173,216,167,217,132,216,169,58,32,217,133,216,185,216,183,217,132)
+        v_h_v8.TextColor3 = Color3.fromRGB(((255 + 4) - 4), ((100 + 7) - 7), ((100 + 3) - 3))
+        return
+    end
+
+    local v_14_sh = v_k_pz()
+    if v_14_sh then
+        
+        v_4_g9.CFrame = CFrame.new(v_4_g9.CFrame.Position, v_14_sh.Position)
+        
+        v_h_v8.Text = string.char(216,167,217,132,216,173,216,167,217,132,216,169,58,32,217,130,217,129,217,132,32,216,170,216,173,216,170,217,138,32,217,133,216,170,217,136,217,130,216,185,32,217,132,217,128,32) .. v_14_sh.Player.Name
+        v_h_v8.TextColor3 = Color3.fromRGB(((100 + 7) - 7), ((255 + 3) - 3), ((100 + 6) - 6))
+
+        if v_6_nl.AutoShoot then
+            v_11_qu()
+        end
+    else
+        v_h_v8.Text = string.char(216,167,217,132,216,173,216,167,217,132,216,169,58,32,217,138,216,168,216,173,216,171,32,216,185,217,134,32,217,135,216,175,217,129,46,46,46)
+        v_h_v8.TextColor3 = Color3.fromRGB(((200 + 8) - 8), ((200 + 4) - 4), ((200 + 7) - 7))
+    end
+end)
+
+
+v_3_1a8.InputBegan:Connect(function(v_15_fk, v_16_qw)
+    if v_16_qw then return end
+    if v_15_fk.KeyCode == v_6_nl.Key then
+        v_6_nl.Enabled = not v_6_nl.Enabled
+        v_c_p2.Text = v_6_nl.Enabled and string.char(79,78) or string.char(79,70,70)
+        v_c_p2.BackgroundColor3 = v_6_nl.Enabled and Color3.fromRGB(((50 + 4) - 4), ((200 + 7) - 7), ((50 + 3) - 3)) or Color3.fromRGB(((40 + 5) - 5), ((40 + 8) - 8), ((45 + 4) - 4))
+    end
+end)
+
+print(string.char(226,156,133,32,70,51,32,72,117,98,32,71,114,111,117,110,100,32,76,101,97,100,105,110,103,32,76,111,97,100,101,100,32,83,117,99,99,101,115,115,102,117,108,108,121,33))
